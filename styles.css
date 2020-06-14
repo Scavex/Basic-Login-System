@@ -1,0 +1,191 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background:url(nebula.jpg ) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+.sitetext{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: seashell;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+
+
+
+}
+
+.box{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    
+}
+
+.box h1{
+    float: left;
+    font-size: 70px;
+    margin-bottom: 50px;
+    padding: 12px 0;
+    
+}
+.box a{
+    margin-bottom: 50px;
+    padding: 35px 0;
+    float: left;
+    font-size: 15px;
+
+}
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 10px 0;
+    margin: 20px 0;
+    border-bottom: 1px solid hsl(131, 37%, 80%);
+    border-spacing: 10px;
+    
+}
+
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    color: whitesmoke;
+    font-size: 18px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+.btn{
+    
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color:#28292a;
+    Letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s; 
+    border-color: transparent;
+    border-radius: 50;
+    left: 42.5%;
+    margin-left: -50px;
+    
+}
+.btn:hover{
+    color: #28292a;
+    background: hsl(207, 27%, 92%);
+    box-shadow: 0 0 10px hsl(207, 27%, 92%), 0 0 10px hsl(207, 27%, 92%), 0 0 10pc hsl(207, 27%, 92%);
+    
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.container{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+nav{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.brand{
+    font-size: 3rem;
+    font-size: 300;
+    transform: translateX(-100rem);
+    animation: slideIn .5s forwards;
+    color: white;
+}
+.brand span{
+    color:rgb(141, 211, 141);
+}
+    
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    transform: translateX(100rem);
+    animation: slideIn .5s forwards;
+}
+nav ul li:nth-child(1){
+    animation-delay: 0s;
+}
+nav ul li:nth-child(2){
+    animation-delay: 0.5s;
+}
+nav ul li:nth-child(3){
+    animation-delay: 1s;
+}
+nav ul li a{
+    padding: 1rem 0;
+    margin: 0 3rem;
+    position: relative ;
+    letter-spacing: 2px;
+}
+nav ul li a:last-child{
+    margin-right: 0;
+}
+nav ul li a::before,
+nav ul li a::after{
+    content:'';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: whitesmoke;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+nav ul li a::before{
+    top: 0;
+    transform-origin: left;
+}
+nav ul li a::after{
+    bottom: 0;
+    transform-origin: right;
+} 
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+    transform: scaleX(1);
+}
+@keyframes slideIn{
+    from{
+
+    }
+    to{
+        transform: translateX(0);
+    }
+
+}
+
+.login-status{
+    font-size: 25px;
+    font-family: fantasy;
+    color: seashell;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+    
+}

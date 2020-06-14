@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:#000;
+    font-family: Arial, Helvetica, sans-serif;
+    background:url(nebula.jpg ) no-repeat;
+    background-size: cover;
+}
+
+
+.intro{
+    margin: 0;
+    padding: 0;
+    color: #111;
+    font-size: 10em;
+}
+.intro span{
+    display: table-cell;
+    margin: 50px;
+    padding: 0;
+    animation: animate 2s linear infinite;
+}
+.intro span:nth-child(1){
+    animation-delay: 0s;
+}
+.intro span:nth-child(2){
+    animation-delay: 0.25s;
+}
+.intro span:nth-child(3){
+    animation-delay: 0.5s;
+}
+.intro span:nth-child(4){
+    animation-delay: 0.75s;
+}
+.intro span:nth-child(5){
+    animation-delay: 1s;
+}
+.intro span:nth-child(6){
+    animation-delay: 1.25s;
+}
+.intro span:nth-child(7){
+    animation-delay: 1.50s;
+}
+.intro span:nth-child(8){
+    animation-delay: 1.75s;
+}
+
+@keyframes animate{
+    0%,100%{
+        color: rgb(250, 250, 250);
+        filter:blur(2px);
+        text-shadow: 0 0 10px rgb(75, 177, 245),
+                    0 0 20px rgb(75, 177, 245), 
+                    0 0 40px rgb(75, 177, 245),
+                    0 0 80px rgb(75, 177, 245),
+                    0 0 120px rgb(75, 177, 245),
+                    0 0 200px rgb(75, 177, 245),
+                    0 0 300px rgb(75, 177, 245),
+                    0 0 400px rgb(75, 177, 245);
+    }
+    5%,95%{
+        color: #111;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+}
+
+
+nav{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+nav ul li a{
+    padding: 0rem 0;
+    margin: 0 3rem;
+    position: relative ;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
